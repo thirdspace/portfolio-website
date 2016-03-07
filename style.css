@@ -48,7 +48,11 @@
 .nopointer {
     pointer-events: none;
 }
-
+.nocorners {
+    border-bottom-left-radius: 0 !important;
+    -webkit-border-bottom-left-radius: 0 !important;
+    -moz-border-radius-bottom-left: 0 !important;
+}
 /*---------------------------------
 	IMPORTS
 -----------------------------------*/

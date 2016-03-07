@@ -84,6 +84,7 @@
         if (y_scroll_pos < scroll_pos_test) {
             $(".aboutlink").addClass("selected");
             $(".portfoliolink").removeClass("selected");
+            $(".contactlink").removeClass("nocorners");
         }
     });
     $(window).on('scroll', function () {
@@ -93,6 +94,7 @@
         }
         if (y_scroll_pos > scroll_pos_test7) {
             $(".portfoliolink").addClass("selected");
+            $(".contactlink").addClass("nocorners");
         }
     });
  });
@@ -204,12 +206,12 @@ $(document).ready(function(){
    			        <br />
 
             <ul class="mainnav">
-				<li><a class="link aboutlink" href="#aboutmarker">About</a></li>
-				<li><a class="link portfoliolink" href="#portfolio">Portfolio</a></li>
-				<li><a class="link resumelink" href="#resume">Resume</a></li>
-				<li><a class="link contactlink" href="#header_8">Contact</a></li>
-                <li><a id="navbtn">Navbtn</a></li>
-			</ul>
+      				<li><a class="link aboutlink" href="#aboutmarker">About</a></li>
+      				<li><a class="link portfoliolink" href="#portfolio">Portfolio</a></li>
+      				<li><a class="link resumelink" href="#resume">Resume</a></li>
+      				<li><a class="link contactlink" href="#header_8">Contact</a></li>
+              <li><a id="navbtn">Navbtn</a></li>
+      			</ul>
         
             <div class="pnav-wrap">
                 <ul class="portfolionav">
