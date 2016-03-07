@@ -1,0 +1,237 @@
+/* Horizontal menu for the CMS CSS Menu Module */
+/* by Alexander Endresen 
+
+Modified by Doug Case http://risingline.com to accomodate a transparent background on primary menu level
+EDIT HERE comments added in comments above each element that would be typically edited
+
+Sample coding for using this menu in a CMSMS template:
+
+<div style="vertical-align: middle; margin: 0; padding: 0; width: 100%; background-position: left top; background-image:url('assets/images/06/navbar.png'); background-repeat:repeat-x; background-attachment:scroll">
+<span style="margin-top:-2px">{menu template='cssmenu.tpl'}</span></div>
+
+Gotchas:
+>Make sure you've got the JavaScript helper loaded or this menu won't work in IE 6
+>Apply the Accessibility CSS menu to your templates with this menu or you'll get hierarchical numbers with each menu item
+ 
+Please contact me with comments, suggestions or corrections at http://risingline.com/contact_general_information.htm
+
+*/
+
+
+#menu_vert {
+   margin-left: 1px;
+   margin-right: 1px;
+}
+
+/* The wrapper clears the floating elements of the menu */
+
+/* Fix for Opera 8 */
+.clearb { clear: both; }
+
+/* EDIT HERE 1 - FROM DOUG - Below styles the dynamically created div id="menuwrapper"
+Change settings here to:
+>width of nav bar - common widths are 760px, 955px, or 100%
+>alignment of all all levels of menu items
+Also if you want underlined text on hover, the color of the underline will be designated here
+Set text align for first level */
+#menuwrapper {
+	background: transparent;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 500;
+	text-align: center;
+	color: #333333;
+	position: relative;
+}
+
+/* EDIT HERE 2 - Set the width of the menu elements at second level. Leaving first level flexible.
+Set text align for 2+ levels */
+#primary-nav li li { 
+   width: 175px; 
+	text-align: left;
+	background-image: none;
+}
+/* EDIT HERE 2.5 - Margin and Padding settings here get rid of extra space, sets the width
+of firs level, to make flexible just remove the wide style below. */
+#primary-nav li { 
+	margin: 0px;
+	padding: 0px;
+	background-image: none;
+}
+/* Unless you know what you do, do not touch these positioning elements */ 
+#primary-nav, #primary-nav ul { 
+   list-style: none; 
+   margin: 0px; 
+   padding: 0px; 
+}
+#primary-nav ul { 
+   position: absolute; 
+   top: auto; 
+   display: none; 
+}
+#primary-nav ul ul { 
+   margin-top: 1px;
+   margin-left: -1px;
+   left: 100%; 
+   top: 0px; 
+}
+#primary-nav li { 
+   margin-left: -1px;
+   float: left; 
+}
+#primary-nav li li { 
+   margin-left: 0px;
+   margin-top: -1px;
+   float: none; 
+   position: relative; 
+}
+/* End of positioning elements */ 
+
+/* Styling the basic apperance of the menu elements
+EDIT HERE 3- You can change the text color for all levels of the menu here. To change the sublevel text to a different
+color see EDIT 5  */
+#primary-nav a {
+	display: block;
+	margin: 0px;
+	padding: 5px 20px;
+	text-decoration: none;
+	color: #333333;
+}
+/* EDIT HERE 4 - You can edit or remove side bordres on the main nav bar. Font attributes set here affect all levels
+Don't change font colors here  */
+#primary-nav li a {
+	border-right: 0px solid #C0C0C0;
+	border-left: 0px solid #C0C0C0;
+	font-size: 10pt;
+	font-weight: bold;
+}
+/* EDIT HERE 5 - 
+Edit or remove bordres of the 2nd and 3rd level menu items
+Also can change font sizes for all submenu text
+If you would like a different font color for submenu text change it here - to change the background color 
+2nd or 3rd level use edits 7 and 8 
+*/
+#primary-nav li li a {
+	border: 1px solid #C0C0C0;
+		padding: 5px 10px;
+	color: #333333;
+}
+/* EDIT HERE 6 - I set the background of the main nav bar to transparent so I can
+ add gradient background pictures in the html. 
+ Obviously, you can also change main nav bar to a different color.
+ Note: Just changing this background color in the default CSS menu template will also affect
+ all lower levels of the menu, you must also add the edits in 7 and 8 at the bottom of this sheet. */	
+#primary-nav li, #primary-nav li.menuparent {
+	background-color: transparent;
+}
+
+/* Styling the basic apperance of the active page elements (shows what page in the menu is being displayed) */
+
+#primary-nav li.menuactive {
+	}
+
+/* Styling the basic apperance of the menuparents - here styled the same on hover (fixes IE bug) */
+/* NOTE FROM DOUG - I changed the positioning so it's easier to use other arrow graphics. */
+#primary-nav ul li.menuparent, 
+#primary-nav ul li.menuparent:hover, 
+#primary-nav ul li.menuparenth {
+	/* arrow for menuparents */
+background: #e6e6e6 url(../ma05.gif) no-repeat 155px 12px;
+	}
+
+/* Styling the apperance of menu items on hover - change background color or text decoration new fix from forum 12-18-07 */
+#primary-nav a:hover { 
+ text-decoration: none;
+ color: #013472;
+} 
+
+/* The magic - set to work for up to a 3 level menu, but can be increased unlimited */
+
+/* 
+just add 
+#primary-nav li:hover ul ul, 
+#primary-nav li.menuparenth ul ul ul,
+for fourth level 
+*/
+#primary-nav ul, 
+#primary-nav li:hover ul, 
+#primary-nav li:hover ul ul, 
+#primary-nav li.menuparenth ul, 
+#primary-nav li.menuparenth ul ul { 
+   display: none; 
+}
+
+/* add 
+#primary-nav ul ul ul li:hover ul, 
+#primary-nav ul ul ul li.menuparenth ul,
+for fourth level
+*/
+#primary-nav li:hover ul, 
+#primary-nav ul li:hover ul, 
+#primary-nav ul ul li:hover ul, 
+#primary-nav li.menuparenth ul, 
+#primary-nav ul li.menuparenth ul, 
+#primary-nav ul ul li.menuparenth ul { 
+   display: block; 
+}
+
+/* IE Hacks */
+/* EDIT HERE 7 - You can change the background color of submenu items that ARE NOT parents match with color in edit 8
+To change text color use step 5 */
+#primary-nav li li {
+	float: left;
+	clear: both;
+	background-color: #e6e6e6;
+}
+/* Don't change */
+#primary-nav li li a { 
+   height: 1%; 
+}
+/* EDIT HERE 8 - You can change the background color of submenu items that ARE parents (match with color in edit 7)
+To change text color use step 5  */
+#primary-nav ul li.menuparent {
+	background-color: #e6e6e6;
+}
+/* EDIT HERE 9 - I added this so that we can have the text color change on mouseover. Also, when I added a background 
+graphic for hover (on cc cluj) I was having problems with the third level, or it's parent being transparent. I added 
+the backgroudn image here, and then specified the background color (what's displayed when no hover under the css section 
+that specifies which graphic arrow to use to indicate a third leve.
+NOTE 12-18-07: I didn't fully test with this element, if problems try removing this.  */
+#primary-nav li li a:hover {
+	color: #013472;
+}
+
+/* accessibility */
+
+/* 
+menu links accesskeys 
+*/
+span.accesskey {
+   text-decoration:none;
+}
+
+/* 
+accessibility divs are hidden by default 
+text, screenreaders and such will show these 
+*/
+.accessibility, hr {
+   position: absolute;
+   top: -999em;
+   left: -999em;
+}
+
+/* 
+definition tags are also hidden 
+these are also used for menu links    
+*/
+dfn {
+   position: absolute;
+   left: -1000px;
+   top: -1000px;
+   width: 0;
+   height: 0;
+   overflow: hidden;
+   display: inline;
+}
+/* end accessibility */

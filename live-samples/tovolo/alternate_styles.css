@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/* 11/13/13 Developed by Stephen Peaslee */
+
+/* Minimal Header 
+
+header {
+	background: #fff !important;
+	border-bottom: 1px solid #52585b !important;
+	width: 960px;
+}
+#bgstrip {
+	background: #fff !important;
+}
+.logo {
+		background: url(images/logo2.jpg) !important;
+		margin-top: 20px !important;
+}
+ul.mainnav li a {
+	color: #52585b !important;
+}
+ul.headnav a, ul.headnav li {
+	background: #fff;
+	color: #52585b;
+}
+li.selected {
+	background: none !important;
+}
+ul.headnav a, ul.headnav li {
+	font-size: 10pt;
+}*/
+
+
+
+
+/*Alternative Bemio Font
+
+h2 {
+     color: #999999;
+    font-family: 'bemioregular';
+    font-size: 2em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+ul.mainnav li a {
+    color: #FFFFFF;
+    font-family: 'bemioregular';
+}*/
+
+
+
+
+
+/*New Sections Page Concept*/
+
+.productshelf {
+	width: 100%;
+	height: 700px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	position: absolute;
+	background: #fff;
+	margin: 0, auto;
+}
+.panel {
+	float: left;
+	height: 100%;
+	position: absolute;
+	transition: opacity 0.3s ease 0s;
+	width: 240px;
+	font-family: 'quicksandlight';
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18pt;
+	display: block;
+	visibility: visible;
+	 -webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+.panel:hover {
+	width: 400px;
+	opacity: 1 !important;
+}
+/*.productshelf p {
+	left: 60px;
+    position: absolute;
+    top: 100px;
+	transition: opacity 0.3s ease 0s;
+}*/
+
+.productshelf p {
+    margin-top: 60px;
+    padding: 20px;
+	background: #fff;
+	opacity: 0.3;
+    text-align: center;
+    vertical-align: middle;
+}
+.bg1 {
+	background: url(images/sections2/sectionsbg1.jpg);
+	background-repeat: no-repeat;
+	left: 0;
+	z-index:1000;
+}
+.bg2 {
+	background: url(images/sections2/sectionsbg2.jpg);
+	background-repeat: no-repeat;
+	left: 240px;
+	z-index:900;
+}
+.bg3 {
+	background: url(images/sections2/sectionsbg3.jpg);
+	background-repeat: no-repeat;
+	left: 480px;
+	background-position: right;
+	z-index: 800;
+}
+.bg4 {
+	background: url(images/sections2/sectionsbg4.jpg);
+	background-repeat: no-repeat;
+	left: 720px;
+	z-index: 700;
+}
+.bg5 {
+	background: url(images/sections2/sectionsbg5.jpg);
+	background-repeat: no-repeat;
+	left: 960px;
+	z-index: 600;
+}
+.bg6 {
+	background: url(images/sections2/sectionsbg6.jpg);
+	background-repeat: no-repeat;
+	left: 1200px;
+	z-index: 500;
+}
+.bg7 {
+	background: url(images/sections2/sectionsbg7.jpg);
+	background-repeat: no-repeat;
+	left: 1440px;
+	z-index: 400;
+	background-position: right;
+}
+
+
+
+
+
+
+/*Responsive Concept*/
+
+.col {
+	background: #CCC;
+}
+
+/*Jamie Header
+.jheader {
+	width: 100%;
+	height: 85px;
+	background: #000;
+	opacity: .5;
+	position: absolute;
+	top: 100px;
+	padding-top: 15px;
+	
+}
+.jheader ul li {
+	float: left;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0;
+	text-align: center;
+	display: inline;
+	color: #fff;
+	height: 85px;
+	padding-top: 15px;
+	margin-top: -15px;
+}
+.jheader ul li:hover {
+	background: #CCC;
+}
+.jheader ul {
+	margin-left: 90px;
+}
+.jheader li a {
+	text-decoration: none;
+}
+.jicon {
+	width: 70px;
+	height: 70px;
+	margin-top: -10px;
+	background-repeat: no-repeat;
+	clear: both;
+}
+.jicon1 {
+	background: url(images/jicon1.png);
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+}
+.jicon1:hover {
+	background: url(images/jicon1_roll.png);
+	background-size: 70px 70px;
+}
+.jicon2 {
+	background: url(images/jicon2.png);
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+}
+.jicon2:hover {
+	background: url(images/jicon2_roll.png);
+	background-size: 70px 70px;
+}
+.jicon3 {
+	background: url(images/jicon3.png);
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+}
+.jicon3:hover {
+	background: url(images/jicon3_roll.png);
+	background-size: 70px 70px;
+}
+.jicon4 {
+	background: url(images/jicon4.png);
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+}
+.jicon4:hover {
+	background: url(images/jicon4_roll.png);
+	background-size: 70px 70px;
+}
+.jicon5 {
+	background: url(images/jicon5.png);
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+}
+.jicon5:hover {
+	background: url(images/jicon5_roll.png);
+	background-size: 70px 70px;
+}
+.jicon6 {
+	background: url(images/jicon6.png);
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+}
+.jicon6:hover {
+	background: url(images/jicon6_roll.png);
+	background-size: 70px 70px;
+}*/
+
+/*Jamie Main Header Overrdes
+#bgstrip {
+	background: #fff;
+	position: relative;
+}
+header {
+	position: relative;
+}
+.logo {
+	margin-top: 20px !important;
+}
+header {
+	background: #fff;
+}
+ul.mainnav li a {
+	color: #000 !important;
+}
+ul.mainnav {
+	margin-top: 40px;
+	margin-left: 300px;
+}
+.logo {
+		background: url(images/logo2.jpg) !important;
+		margin-top: 20px !important;
+}*/

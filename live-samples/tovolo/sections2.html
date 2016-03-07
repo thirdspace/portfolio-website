@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="alternate_styles.css" />
+<title>Products</title>
+<script src="assets/scripts/jquery-1.10.2.min.js"></script>
+<script src="assets/scripts/jquery-ui-1.10.3.custom.min.js"></script>
+</head>
+	
+    <script>
+	/*Content Swap*/
+	$( document ).ready(function() {
+        $( ".gridbox" ).click(function() {
+         $("#content").slideUp( "slow" );
+		  $("#content2").fadeIn( "slow" );
+		  $(".backbtn").fadeIn( "slow" );
+
+        });
+     });
+	 </script>
+
+<div id="bgstrip"></div><!--End BGStrip-->
+<div class="container">
+
+    <header>
+        <div class="headerbounds">
+            <a href="index.html"><div class="logo"></div></a>
+            <ul class="mainnav">
+                <li class="selected"><a href="sections.html">Products</a></li>
+                <li><a href="color.html">Color</a></li>
+                <li><a href="#">Inspiration</a></li>
+            </ul>
+            
+            <ul class="headnav">
+                <li>800.958.8487</li>
+                <li><a href="#">Find a Store</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div><!--End Headerbounds-->
+    </header>
+    </div><!--End Container-->
+
+    <div id="content" style="margin-top: 40px !important;" >
+    
+    <!-- <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>	
+    </ul> -->
+    
+      <script>
+	/*Product Shelf Interaction*/
+	$( document ).ready(function() {
+        $( ".productshelf" ).on( "mouseenter", function() {
+		$(".panel").addClass("fade");
+        });
+		
+		$( ".productshelf" ).on( "mouseleave", function() {
+		$(".panel").removeClass("fade");
+		});
+     });
+	 
+	 </script>
+      
+    
+    	<div class="productshelf">
+        <a href="#"><div class="panel bg1"><p>Utensils</p></div></a>
+        <a href="#"><div class="panel bg2"><p>Baking</p></div></a>
+        <a href="#"><div class="panel bg3"><p>Gadgets</p></div></a>
+        <a href="#"><div class="panel bg4"><p>Freezer</p></div></a>
+        <a href="#"><div class="panel bg5"><p>Spatulart</p></div></a>
+        <a href="#"><div class="panel bg6"><p>Kitchen Prep</p></div></a>
+        <a href="#"><div class="panel bg7"><p>New Releases</p></div></a>
+
+
+        </div><!--End productshelf"
+    
+         <div class="productgrid">
+        
+         <a href="#"><div class="gridbox1 gridbox stdbox maincol"></div></a>
+         <a href="#"><div class="gridbox2 gridbox stdbox maincol"></div></a>
+          <a href="#"><div class="gridbox3 gridbox tallbox maincol"></div></a>
+            
+          <a href="#"><div class="gridbox4 gridbox stdbox maincol"></div></a>
+          <a href="#"><div class="gridbox5 gridbox stdbox maincol"></div></a>
+            
+          <a href="#"><div class="gridbox7 gridbox stdbox maincol"></div></a>
+          <a href="#"><div class="gridbox8 gridbox stdbox maincol"></div></a>
+          <a href="#"><div class="gridbox9 gridbox smallbox rightcol"></div></a>
+
+
+        </div><!--End Productgrid-->
+        
+    </div><!--End Content-->
+    
+     <div id="content2">
+    
+     <script>
+	/*Back Button Navigation*/
+	$( document ).ready(function() {
+        $( ".backbtn" ).click(function() {
+         $("#content2").slideDown( "slow" );
+		  $("#content").slideDown( "slow" );
+		  $(".backbtn").hide( "fast" );
+		  $("#content2").hide( "fast" );
+
+        });
+     });
+	 </script>
+    
+     <ul class="breadcrumb">
+            <li class="backbtn"><a href="#">Back</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>	
+            <li><a href="#">Utensils</a></li>	
+    </ul>
+    
+         <div class="productgrid">
+        
+             <a href="product-knife.html"><div class="gridbox10 gridbox stdbox maincol"></div></a>
+             <a href="product-knife.html"><div class="gridbox11 gridbox stdbox maincol"></div></a>
+              <a href="product-knife.html"><div class="gridbox12 gridbox tallbox maincol"></div></a>
+                
+              <a href="product-knife.html"><div class="gridbox13 gridbox stdbox maincol"></div></a>
+              <a href="product-knife.html"><div class="gridbox14 gridbox stdbox maincol"></div></a>
+                
+    		  <a href="product-knife.html"><div class="gridbox15 gridbox stdbox maincol"></div></a>
+          	  <a href="product-knife.html"><div class="gridbox16 gridbox stdbox maincol"></div></a>
+          	  <a href="product-knife.html"><div class="gridbox17 gridbox smallbox maincol"></div></a>
+
+        </div><!--End Productgrid-->
+        
+    </div><!--End Content-->
+    
+
+   <div class="belowproduct belowexplore">
+   		
+   		<div class="container">
+        	<div class="collectionstory">
+                					
+                    <div class="storydesc short">
+                        
+                        <div class="story defaultstory">
+							<h2>Better Bartending</h2>
+                    		<p class="intro">Check out our bar line, that helps you make professional drinks easier!</p>
+                        	<p class="explore">Click a tool to explore</p>
+                        </div><!--End Defaultstory-->
+                        
+                       <div class="story reamerstory hide">
+                       		<h2>Citrus Reamer</h2>
+                        	<p>Don’t lose a drop of your favorite citrus fruit juices. The reamer’s clever strainer reserves the pulp while the base cup collects the juice.</p>
+                            <img class="storyexample" src="images/storyphoto2/reamer_action.jpg" />
+                       </div><!--End Masherstory-->
+                       
+                       <div class="story zesterstory hide">
+                      		<h2>Citrus Zester</h2>
+                        	<p>The Standz® Citrus Zester features a colorful head and an ergonomically shaped handle, allowing you to stand the tool upright keeping your counters clean. </p>							<img class="storyexample" src="images/storyphoto2/zester_action.jpg" />
+                       </div><!--End Knifestory-->
+                       
+                       <div class="story cubesstory hide">
+                       		<h2>Sphere Ice Molds</h2>
+                        	<p>Roll with the high rollers with our Sphere Ice Molds. The innovative and clever design gives you a 2.5” sphere, perfect to accompany your whiskey, bourbon, or scotch. </p>
+                            <img class="storyexample" src="images/storyphoto2/cubes_action.jpg" />
+                       </div><!--End Basterstory-->
+                       
+                       <div class="story cubesstory2 hide">
+                       		<h2>King Cube Molds</h2>
+                        	<p>Nothing else compares to perfectly shaped ice cubes when adding it to your beverage. Try making coffee ice cubes and never drink a diluted iced coffee again. </p>
+                            <img class="storyexample" src="images/storyphoto2/cubes2_action.jpg" />
+                       </div><!--End Basterstory2-->                       
+                        
+                </div><!--End storydescription-->
+                
+                <script>
+				/*Photo Story*/
+					/*Photo Story - Show Stories*/
+					$( document ).ready(function() {
+						$(".reamer").hover(function(){
+						 $("div.storydesc .story").stop(true, false).fadeOut( "fast");
+						 $(".reamerstory").stop(true, true).fadeToggle( "slow", "linear" );
+						}); 
+							$(".zester").hover(function(){
+						 $("div.storydesc .story").stop(true, false).fadeOut( "fast");
+						 $(".zesterstory").stop(true, true).fadeToggle( "slow", "linear" );
+						}); 
+							$(".cubes").hover(function(){
+						 $("div.storydesc .story").stop(true, false).fadeOut( "fast");
+						 $(".cubesstory").stop(true, true).fadeToggle( "slow", "linear" );
+						}); 
+							$(".cubes2").hover(function(){
+						 $("div.storydesc .story").stop(true, false).fadeOut( "fast");
+						 $(".cubesstory2").stop(true, true).fadeToggle( "slow", "linear" );
+						}); 
+						/*Photo Story - Bring back default Story on Mouse Out*/
+						$( "div.storyphoto2" ).mouseout(function() {
+						$(".story").stop(true, false).hide("fast");
+						$(".defaultstory").stop(true, true).fadeIn( "slow", "linear" );
+						});
+						/*Photo Story - Highlight image*/
+						$( ".storyphoto2" ).on( "mouseenter", function() {
+						 $(".storyphoto2 img").addClass("fade");
+						});
+						$( ".storyphoto2" ).on( "mouseleave", function() {
+							$(".storyphoto2 img").removeClass("fade");
+						});
+					});
+			</script>
+                
+        		<div class="storyphoto2">
+                    <a href="product-reamer.html"><img class="reamer" src="images/storyphoto2/reamer.jpg" width="220" height="288" /></a>
+                    <a href="product-zester.html"><img class="zester" src="images/storyphoto2/zester.jpg" width="70" height="288" /></a>
+                    <a href="product-spheremolds.html"><img class="cubes" src="images/storyphoto2/cubes.jpg" width="150" height="288" /></a>
+                    <a href="product-kingcubes.html"><img class="cubes2" src="images/storyphoto2/cubes2.jpg" width="180" height="288" /></a>
+                </div><!--End Story photo 1-->
+                
+        	</div><!--End Collection Story-->
+        </div><!--End Container-->
+       
+       <div class="footer">
+       	  <div class="container">
+         	
+            <ul class="socialbar">
+            	<a href="#"><li class="socialbar-facebook"><img src="images/social/facebook1.png" /></li></a>
+                <a href="#"><li class="socialbar-twitter"><img src="images/social/twitter1.png" /></li></a>
+                <a href="#"><li class="socialbar-pinterest"><img src="images/social/pinterest1.png" /></li></a>
+                <a href="#"><li class="socialbar-gplus"><img src="images/social/gplus1.png" /></li></a>
+            </ul>
+            
+            <form class="signup">
+            <label>News &amp; Offers</label><input class="newslettersignup" type="text" name="email" placeholder="email address">
+            <button>></button>
+            </form>
+            
+            <div class="footernav">
+                <ul class="footernav-left">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Product Catalog</a></li>
+                    <li><a href="#">2013 Addendum</a></li>
+                </ul>
+                
+                <ul class="footernav-right">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Retailer Information</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div><!--End Footernav-->
+           
+            
+          </div><!--End Container-->
+       </div><!--End Footer--> 
+       
+    </div><!--End Belowproduct-->
+    
+ 
+
+<body>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="canonical" href="{$canonical}" /><link rel="canonical" href="{$content_obj->GetURL()}" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index,follow" />
+<meta http-equiv="Content-Language" content="en-us" />
+<link rel="shortcut icon" href="favicon.ico" />
+<title>Calorie Control</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!--[if lte IE 6]>
+<meta http-equiv="refresh" content="0; url=/ie6.html" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window.top.location = '/ie6.html';
+/* ]]> */
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="{root_url}/assets/css/01/01-horizontal.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script language="JavaScript" type="text/javascript" src="{root_url}/assets/js/emailpage.js"></script>
+<link rel="stylesheet" href="assets/css/anythingslider.css">
+<link rel="stylesheet" href="assets/css/animate.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+<script src="assets/js/jquery.anythingslider.js"></script>
+<script src="assets/js/jquery.anythingslider.fx.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+});
+
+
+</script>
+</head>
+<body>
+<div class="preload"> 
+  <!-- --> 
+</div><!--End Preload-->
+<div id="wrapper">
+    <div id="banner">
+        <div id="logo">
+            <img class="photo" src="images/logo.jpg" />
+      	</div>
+  	<img id="product" src="images/productimage3.png" />
+  	<h2>Calorie Control</h2><h2 style="margin-top: -10px;">Weight Management</h2>
+  	<p>with CoffeeGenic<sup>TM</sup> Green Coffee Extract</p>
+    <img id="blueberry" src="images/blueberry.jpg" />
+</div><!--End Banner-->
+<div id="content">
+  	<div class="photo" id="navbar">
+  	<ul>
+  		<li id="about"><a href="#1">About</a></li>
+  		<li id="natural"><a href="#2" >All Natural</a></li>
+  		<li id="results"><a href="#3">Results</a></li>
+  		<li id="buynow"><a href="#4">Buy Now</a></li>
+  	</ul>
+  	</div><!--End Navbar-->
+  	<div id="contentwrapper">
+    <div class="round" id="maincontent">    
+    
+    	<!-- Define slider dimensions here -->
+    	<style>
+    	#slider
+    	/* animate.css animation settings 
+    	 * If animating elements inside the panel, include the element here ( e.g. #slider li, #slider img {...} )
+    	 */
+    	#slider li {
+    		-webkit-backface-visibility: hidden;
+    		-moz-backface-visibility: hidden;
+    		-ms-backface-visibility: hidden;
+    		backface-visibility: hidden;
+    		-webkit-animation-duration: 1s;
+    		-webkit-animation-delay: .2s;
+    		-webkit-animation-timing-function: ease;
+    		-webkit-animation-fill-mode: both;
+    		-moz-animation-duration: 1s;
+    		-moz-animation-delay: .2s;
+    		-moz-animation-timing-function: ease;
+    		-moz-animation-fill-mode: both;
+    		-ms-animation-duration: 1s;
+    		-ms-animation-delay: .2s;
+    		-ms-animation-timing-function: ease;
+    		-ms-animation-fill-mode: both;
+    		animation-duration: 1s;
+    		animation-delay: .2s;
+    		animation-timing-function: ease;
+    		animation-fill-mode: both;
+    	}
+    	</style>
+    
+    	<!-- AnythingSlider initialization -->
+    	<script type="text/javascript">
+    	$(document).ready(function () {
+    		
+    		$("#buynow a").click( function() {
+    			$("#slider").anythingSlider(1);
+    			buyPage();
+    		});
+    		
+    		$("span.arrow.forward").live("click", function () {
+    			
+    			if ($("#slider").data("AnythingSlider").currentPage == 3)
+    				buyPage();
+    			
+    		});
+    		
+    	})
+    	
+    	function buyPage() {
+    		window.location = "http://astahealth.valitics.com/calorie_control";
+    	}
+    	
+    	</script>
+    	<script>
+    		// DOM Ready    
+    			$(function(){
+    			$('#navbar a').click(function(){
+    			var slide = $(this).attr('href').substring(1);
+    			$('#slider').anythingSlider(slide);
+    			
+    			
+    			return false;
+    			
+    			});
+    			 $('#slider')
+    			  .anythingSlider({
+    			   resizeContents      : false,
+    			   navigationFormatter : function(i, panel){
+    			    return ['a', 'b', 'c', 'd', 'e', 'f'][i - 1];
+    			   }
+    			   
+    			  })
+    			  .anythingSliderFx({
+    			   // base FX definitions can be mixed and matched in here too.
+    			   '.fade' : [ 'fade' ],
+    			
+    			   // for more precise control, use the "inFx" and "outFx" definitions
+    			   // inFx = the animation that occurs when you slide "in" to a panel
+    			   inFx : {
+    			    '.textSlide h3'  : { opacity: 1, top  : 0, duration: 400, easing : 'easeOutBounce' },
+    			    '.textSlide li'  : { opacity: 1, left : 0, duration: 400 },
+    			    '.textSlide img' : { opacity: 1, duration: 400 },
+    			    '.quoteSlide'    : { top : 0, duration: 400, easing : 'easeOutElastic' },
+    			    '.expand'        : { width: '100%', top: '0%', left: '0%', duration: 400, easing : 'easeOutBounce' }
+    			   },
+    			   // out = the animation that occurs when you slide "out" of a panel
+    			   // (it also occurs before the "in" animation)
+    			   outFx : {
+    			    '.textSlide h3'      : { opacity: 0, top  : '-100px', duration: 350 },
+    			    '.textSlide li:odd'  : { opacity: 0, left : '-200px', duration: 350 },
+    			    '.textSlide li:even' : { opacity: 0, left : '200px',  duration: 350 },
+    			    '.textSlide img'     : { opacity: 0, duration: 350 },
+    			    '.quoteSlide:first'  : { top : '-500px', duration: 350 },
+    			    '.quoteSlide:last'   : { top : '500px', duration: 350 },
+    			    '.expand'            : { width: '10%', top: '50%', left: '50%', duration: 350 }
+    			   }
+    			  });
+    			  
+    			 
+    			  
+    			});   
+    			 
+    	</script>
+    
+    	<!-- Older IE stylesheet, to reposition navigation arrows, added AFTER the theme stylesheet -->
+    	<!--[if lte IE 7]>
+    	<link rel="stylesheet" href="css/anythingslider-ie.css" type="text/css" media="screen" />
+    	<![endif]-->
+    </head>
+    
+
+    	<!-- CSS3 AnythingSlider -->
+    <div id="slidercontainer">
+    	<ul id="slider">
+    		<!-- data-animate="IN animation, OUT animation" can be applied to the panel or ANY element inside the panel -->
+    		<li data-animate="slideIn">
+    		<img id="prodphoto" src="images/productphoto.png" />
+    		<h1>Lose Those Extra Pounds With All Natural Instant Coffee!</h1>
+    		 <p>Studies have found that diet &amp; lifestyle modifications alone are not enough to attain long-lasting weight loss. CoffeeGenic is a specialized extract of green coffee beans in delicious &amp; convenient instant brew formula that helps your body reach your weight loss goals.</p>
+             <p>Clinical studies validate that after-meal glucose surges are rough on our bodies and are responsible for weight gain, and a variety of other side effects including arterial blockage and increased risk of cancer.</p>
+    		  <p>CoffeeGenic<sup>TM</sup> has been proven to reduce these spikes by approximately 32%. This not only aids in maintaining a healthy blood sugar level, but also in your weight loss efforts. </p>
+    		</li>
+       		<li data-animate="slideIn">
+       		<img class="round photo" id="prodphoto2" src="images/greenbean.jpg" />
+    		<h1>All Natural</h1>
+    		 <p>CoffeeGenic™ Green Coffee Extract is the main active ingredient that helps modulate after-meal glucose levels through the use of chlorogenic acids, a  natural polyphenol found in the unroasted green coffee bean. This beneficial acid can indeed be found in the everyday latte, but only in trace amounts. Throughout the process of roasting the coffee bean, the chlorogenic acids are broken down.</p>
+             <p>CoffeeGenic™ Green Coffee Extract is produced through a patented extraction process of choice selected organic raw green beans to deliver an extraordinarily high proportion of chlorogenic acid for maximum potency and results.</p>
+    		  <p>This powder mix is available in a 60-serving bottle and in individual stick packs that you can conveniently on the go.</p>
+    		</li>
+    		<li data-animate="slideIn">
+    		  <h1>Results</h1>
+    		   <p>During a recent study, the American Chemical Society found that overweight participants given regular doses of green coffee extract lost an average of 17.5 pounds over 20 weeks, and lost on average 10.5% of their body weight</p>
+               <p>Clinical studies validate that when overweight humans take some of the natural ingredients in this formula combined with reduced calorie intake, there is a greater loss of body fat compared to diet alone.</p>
+    		   <p>Further studies have shown that with increased dosage, some test participants have been able to loose up to an average of 16% of their body weight. So why wait?</p>
+    		   <p>Stop putting your body through the rough ups and downs of post meal surges and give your body what it needs not only regulate healthy blood sugar levels, but also to help your body return to a healthy weight.</p>
+    		</li>
+    		<li data-animate="slideIn">
+    		  <h1>Buy Now</h1>
+    		   <p>This product is 100% natural, tested and completely safe! Buy today and don't go another day putting off your weight loss goals! You have nothing to loose but the weight. </p>
+    		   </p>
+    	<table class="product-grid">
+    	    <tbody>
+    	        <tr>
+    	            <td><h3>Purchase Module Deactivated for Example</h3><br />
+    	         
+    	        </tr>
+    		    </table>
+    		</li>
+    	</ul>
+    
+    	<!-- END AnythingSlider -->
+    	</div><!--End Slidecontainer-->
+    </div>
+    <div id="subcontentboxes">
+    <div class="round" id="box1"><h3><span class="quotation">"</span>It Tastes Good <span id="box1indent">and Works Fast!</span><span class="quotation">"</span></h3></div>
+    <div class="round" id="box2"><iframe width="250" height="141" src="http://www.youtube.com/embed/bWkIUSyXdGw" frameborder="0" allowfullscreen></iframe></div><!--End Box2-->
+     <div class="round" id="box3"><img src="images/logos.png" /></div><!--End Box2-->
+    </div><!--End Subcontentboxes-->
+        <br />
+    <br class="clearfloat" />
+    <div id="buysection">
+    <h2>Order Today!</h2>
+    <p>Secure Checkout</p>
+    <a href="http://astahealth.valitics.com/calorie_control"><img src="images/buynow.png" /><p>Buy Now!</p></a>
+    </div><!--End Buynow-->
+    <br class="clearfloat" />
+  <div id="footer"></div>
+  <div id="credits">
+    <div id="cre1">Legal information placeholder <a href="legal.php" class="menuw" rel="nofollow"></a></div>
+    <div id="cre2"><a href="" class="menuw">Landing page example by Stephen Peaslee</a></div>
+</div><!--End Credits-->
+</div><!--End Contentwrapper-->
+  </div><!--End Content-->
+  </div><!--End Wrapper-->
+</body>
+</html>
