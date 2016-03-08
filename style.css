@@ -34,7 +34,7 @@
     padding-top: 30px;
 }
 .nudge3 {
-    margin-top: -19px;
+    margin-top: -15px;
 }
 .nudgeup {
     margin-top: -10px !important;
@@ -381,6 +381,9 @@ ul.portfolionav li.pnav  {
 img.portfoliophoto {
     height: 300px !important;
     float: left;
+}
+img.portfoliophoto.nudge {
+    height: 304px !important;
 }
 .proj-wheelerdealeruxi img.portfoliophoto {
     top: -15px;
