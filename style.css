@@ -1847,6 +1847,12 @@ and (min-width : 400px) and (max-width : 500px) {
 }
 }
 
+@media screen and (min-width: 1500px) {
+    #recent.recent.portfolio-section {
+        margin-top: 550px !important;
+    }
+}
+
 @media only screen
 and (max-width : 500px) {
 .navbar {
