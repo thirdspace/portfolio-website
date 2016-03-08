@@ -25,7 +25,7 @@
     display: block !important;
 }
 .nudge {
-    margin-top: -15px;
+    margin-top: -19px;
 }
 .nudge1 {
     padding-top: 10px;
@@ -34,7 +34,7 @@
     padding-top: 30px;
 }
 .nudge3 {
-    margin-top: -19px;
+    margin-top: -15px;
 }
 .nudgeup {
     margin-top: -10px !important;
@@ -381,6 +381,9 @@ ul.portfolionav li.pnav  {
 img.portfoliophoto {
     height: 300px !important;
     float: left;
+}
+img.portfoliophoto.nudge {
+    height: 304px !important;
 }
 .proj-wheelerdealeruxi img.portfoliophoto {
     top: -15px;
@@ -1842,6 +1845,12 @@ and (min-width : 400px) and (max-width : 500px) {
 .navbar ul.mainnav li {
     margin-left: -220px !important;
 }
+}
+
+@media screen and (min-width: 1500px) {
+    #recent.recent.portfolio-section {
+        margin-top: 550px !important;
+    }
 }
 
 @media only screen
